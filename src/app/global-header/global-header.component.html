@@ -1,0 +1,32 @@
+<header role="banner">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="container-header container-flex-row">
+          <div class="logo-rbc-royal-bank hidden-xs">
+            <img src="assets/img/logo-rbc-royal-bank.svg" alt="RBC Logo">
+          </div>
+          <div class="logo-rbc-shield visible-xs-block">
+            <a routerLink="/" aria-label="Home">
+              <img src="assets/img/logo-rbc-shield.svg" alt="RBC Shield Logo">
+            </a>
+          </div>
+          <!--div class="language-toggle">
+            <p>
+              <a role="link" tabindex="0" (click)="toggleLang()" lang="locale">{{ "LANGUAGE" | translate }}</a>
+            </p>
+          </div>-->
+          <p aria-hidden="true">&#124;</p>
+          <div class="personal-banking">
+            <p>
+              <a i18n="Nav Content" (click)="personalBanking()">
+                Personal Banking
+                <span aria-hidden="true" class="rbc-font-icon-link-indicator-sm"></span>
+              </a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>

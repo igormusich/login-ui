@@ -1,0 +1,100 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('assets/styles/reset.css');
+@import url('assets/styles/bootstrap.min.css');
+@import url('assets/styles/font-fira.css');
+@import url('assets/styles/font-roboto.css');
+@import url('assets/styles/font-iconography.css');
+@import url('assets/styles/styles.css');
+
+.interceptingHeader {
+  margin-bottom: 15px;
+}
+
+/* Removes Accessibility Focus Outline box */
+div:focus {
+  outline: none;
+}
+
+
+/* IE Spinner widget added on Number Inputs */
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+
+/* IE Skype Phone number links added at the end of phone numbers */
+
+span[class^='skype_pnh_container'] {
+  display: none !important;
+}
+
+span[class^='skype_pnh_print_container'] {
+  display: inline !important;
+}
+
+.helperIcon {
+  width: 15px;
+  height: 15px;
+}
+
+.ng-tooltip {
+  max-width: 300px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 8px;
+  position: absolute;
+  z-index: 1000;
+  display: block;
+  opacity: 0;
+  -webkit-transition: opacity 300ms;
+  -moz-transition: opacity 300ms;
+  -o-transition: opacity 300ms;
+  transition: opacity 300ms;
+}
+
+.ng-tooltip-show {
+  opacity: 1;
+}
+
+.ng-tooltip::after {
+  content: "";
+  position: absolute;
+  border-style: solid;
+}
+
+.ng-tooltip-top::after {
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-color: black transparent transparent transparent;
+}
+
+.ng-tooltip-bottom::after {
+  bottom: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-color: transparent transparent black transparent;
+}
+
+.ng-tooltip-left::after {
+  top: 50%;
+  left: 100%;
+  margin-top: -5px;
+  border-width: 5px;
+  border-color: transparent transparent transparent black;
+}
+
+.ng-tooltip-right::after {
+  top: 50%;
+  right: 100%;
+  margin-top: -5px;
+  border-width: 5px;
+  border-color: transparent black transparent transparent;
+}

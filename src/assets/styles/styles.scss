@@ -1,0 +1,227 @@
+@import 'palette.scss';
+@import 'helpers.scss';
+@import 'animations.scss';
+@import 'buttons.scss';
+@import 'form-fields.scss';
+@import 'typography.scss';
+@import 'accessibility.scss';
+html {
+  height: 100%;
+  background: rgba(0, 0, 0, 0);
+}
+
+body {
+  height: 100%;
+}
+
+header {
+  background: $rbc-blue-tint;
+  .container-header {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  .container-flex {
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    p,
+    a,
+    a:hover,
+    a:focus,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    [class^="rbc-font-icon-"] {
+      color: $white;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    p {
+      font-family: 'Fira Sans Regular', Arial, sans-serif;
+      font-size: 14px;
+    }
+    .logo-rbc-royal-bank {
+      flex: 0 0 125px;
+    }
+    .logo-rbc-shield {
+      flex: 0 0 35px;
+    }
+    .language-toggle {
+      flex: 0 1 auto;
+      margin-left: auto;
+      margin-right: 15px;
+    }
+    .personal-banking {
+      flex: 0 1 auto;
+      margin-left: 15px;
+      [class^="rbc-font-icon-"] {
+        margin-left: 5px;
+      }
+    }
+  }
+}
+
+footer {
+  p {
+    @include font-size(14);
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+  .footer-support {
+    p,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    a,
+    [class^="rbc-font-icon-"] {
+      color: $white;
+    }
+    background: $grey-5;
+    p.bold {
+      font-family: 'Roboto Regular', Arial, sans-serif;
+      margin-bottom: 0;
+    }
+    hr {
+      border-color: $grey-3;
+    }
+  }
+  .footer-legal {
+    p,
+    a,
+    a:hover,
+    a:focus,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    [class^="rbc-font-icon-"] {
+      color: $white;
+    }
+    background: $grey-6;
+    .container-footer {
+      padding: 15px;
+      margin-bottom: 0;
+    }
+    .container-flex {
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      flex-wrap: wrap;
+      .rbc-shield {
+        margin-bottom: 10px;
+        flex: 0 0 auto;
+        width: 40px;
+      }
+      .copyright {
+        flex: 0 0 auto;
+      }
+      .container-flex {
+        align-items: center;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 0;
+        p {
+          margin-bottom: 0;
+        }
+      }
+      .privacy-security {
+        flex: 0 0 auto;
+        margin-right: 15px;
+      }
+      .legal {
+        flex: 0 0 auto;
+        margin-right: 15px;
+        margin-left: 15px;
+      }
+      .accessibility {
+        flex: 0 0 auto;
+        margin-left: 15px;
+      }
+    }
+  }
+}
+
+// app container
+.container-app {
+  min-height: 100%;
+  flex-direction: column;
+  flex: 1 0 auto;
+}
+
+.container-content {
+  flex: 1 0 auto;
+}
+
+.password-requirements {
+  ul {
+    margin-left: 0;
+    list-style-type: none;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+//reset password
+.password-view-toggle {
+  display: inline-block;
+  z-index: 9999;
+  float: right;
+  & p::before {
+    display: inline-block;
+    position: relative;
+    top: 2px;
+    width: 16px;
+    margin-left: 10px;
+    margin-right: 5px;
+    content: url("../icons/informational.svg");
+  }
+  p {
+    font-family: 'Roboto Regular', Arial, sans-serif;
+    color: $rbc-blue-tint;
+    cursor: pointer;
+    font-size: 16px;
+  }
+}
+
+.requirement-met::before {
+  background: url("../icons/success.svg") 0 3px no-repeat;
+  position: relative;
+  margin-left: -20px;
+  content: '';
+  background-size: contain;
+  padding-left: 16px;
+  margin-right: 4px;
+}
+
+//misc
+.feature-image {
+  background: url('../img/hero-banner.png') top no-repeat;
+  background-size: cover;
+  height: 450px;
+  width: 100%;
+  z-index: -9999;
+  position: absolute;
+}
+
+.loading {
+  position: absolute;
+  z-index: 9999;
+  top: 50%;
+  left: 50%;
+}
+
+
+/* Modal CSS */
+
+@import 'responsive.scss';

@@ -1,0 +1,29 @@
+a:focus {
+	outline-offset: 5px;
+	text-decoration: none;
+}
+
+header {
+	a:focus {
+		outline-color: $white;
+	}
+}
+
+footer {
+	.footer-legal {
+		a:focus {
+			outline-color: $white;
+		}
+	}
+}
+
+@media(min-width:768px){
+
+}
+
+@media(min-width:992px){
+	
+}
+
+@media(min-width:1200px){
+}

@@ -1,0 +1,91 @@
+$rbc-blue: #0051A5;
+$rbc-blue-tint: #006AC3;
+$rbc-yellow: #FEDF01;
+$rbc-blue-dark: #002750;
+$rbc-wine: #8B214B;
+$rbc-warm-red: #F93F26;
+$rbc-sun: #FCA311;
+$rbc-apple: #AABA0A;
+$rbc-warm-red-dark: #B91A0E;
+$rbc-carbon-dark: #50585F;
+$rbc-carbon: #8499A6;
+
+$magenta: #EC008C;
+$white: #ffffff;
+$black: #000000;
+
+$grey-1: #FAFAFA ;
+$grey-2: #EAEAEA ;
+$grey-3: #B3B3B3 ;
+$grey-4: #6F6F6F ;
+$grey-5: #585858 ;
+$grey-6: #444444 ;
+$grey-7: #252525 ;
+
+// text
+
+.color-rbc-blue {
+	color: $rbc-blue;
+}
+
+.color-rbc-blue-tint {
+	color: $rbc-blue-tint;
+}
+
+.color-rbc-yellow {
+	color: $rbc-yellow;
+}
+
+.color-rbc-blue-dark {
+	color: $rbc-blue-dark;
+}
+
+.color-rbc-wine {
+	color: $rbc-wine;
+}
+
+.color-rbc-warm-red {
+	color: $rbc-warm-red;
+}
+
+.color-rbc-sun {
+	color: $rbc-sun;
+}
+
+.color-white {
+	color: $white;
+}
+
+// background colour
+
+.bg-white {
+	background-color: $white;
+}
+
+.bg-rbc-blue {
+	background-color: $rbc-blue;
+}
+
+.bg-rbc-blue-tint {
+	background-color: $rbc-blue-tint;
+}
+
+.bg-rbc-yellow {
+	background-color: $rbc-yellow;
+}
+
+.bg-rbc-blue-dark {
+	background-color: $rbc-blue-dark;
+}
+
+.bg-rbc-wine {
+	background-color: $rbc-wine;
+}
+
+.bg-rbc-warm-red {
+	background-color: $rbc-warm-red;
+}
+
+.bg-rbc-sun {
+	background-color: $rbc-sun;
+}

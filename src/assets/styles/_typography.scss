@@ -1,0 +1,77 @@
+html { }
+
+ul {
+	list-style-type: disc;
+	margin-left: 20px;
+}
+
+a {
+	font-family: 'Roboto Light', Arial, sans-serif; 
+}
+
+a,
+a:hover,
+a:focus {
+	color: $rbc-blue-tint;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	color: $grey-6;
+}
+
+h1, h2, h3 {
+	font-family: 'Fira Sans Light', Arial, sans-serif; 
+	line-height: 1.15;
+	margin-bottom: 8px;
+}
+
+h1 {
+	@include font-size(32);
+}
+
+h2 {
+	@include font-size(26);
+}
+
+h3{
+	@include font-size(18);
+	line-height: 1.25;
+}
+
+h4, h5 {
+	font-family: 'Fira Sans Regular', Arial, sans-serif; 
+}
+
+h4 {
+	@include font-size(22);
+}
+
+h5 {
+	@include font-size(18);
+}
+
+h6 {
+	font-family: 'Fira Sans Regular', Arial, sans-serif; 
+	@include font-size(18);
+	margin-bottom: 5px;
+}
+
+p, li {
+	font-family: 'Roboto Light', Arial, sans-serif; 
+	@include font-size(16);
+	line-height: 1.5;
+	color: $grey-4;
+}
+
+p {
+	margin-bottom: 15px;
+}
+
+p:last-of-type,
+li:last-of-type {
+	margin-bottom: 0;
+}
+
+.bold {
+	font-family: 'Roboto Medium', Arial, sans-serif;
+}

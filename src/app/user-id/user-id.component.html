@@ -1,0 +1,47 @@
+<!-- Landmark for main info -->
+<div class="container" role="main">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="container-generic bg-rbc-white">
+        <div class="row">
+          <div class="container-generic col-md-12">
+            <div tabindex="0" #errorDisplay [hidden]="!respErrorFlag" [ngClass]="getStyle()">
+              <h3 id="test" for="Error Message">{{ errorHeader }}</h3>
+              <p>
+                <html-outlet [html]='errorMessage'></html-outlet>
+              </p>
+            </div>
+            <h1 id="ForgotYourPassword" aria-describedby="passwordInfo">Sign in</h1>
+            <p id="passwordInfo">with your RBC Account</p>
+            <div #inlineError [hidden]="!inlineErrorFlag" [ngClass]="getStyle()" aria-label="Critical Error">
+              <p class="inline-validation critical">{{ errorMessage }}</p>
+            </div>
+          </div>
+        </div>
+        <form [formGroup]="signInForm"  (ngSubmit)="onSubmit()" novalidate>
+          <div class="row">
+            <div class="col-md-7">
+              <div class="input-field">
+                <label id="signinlabel" for="signinid">Email or User Id</label>
+                <input autocomplete=off #inputField tabindex="0" id="signinid" formControlName="signInId" required type="text"  (keypress)="isSpace($event)" placeholder="Enter your sign in ID">
+                <div tabindex="0" aria-live="polite" id="signInIdError" *ngIf="isSubmitted"
+                     class="inline-validation critical">
+                  <p>Enter your sign in ID to continue.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <p></p>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <button [disabled]="loading" aria-label="Send Reset Instructions" type="submit" id="id-submit" class="button button-primary">Sign-In</button>
+              <button aria-label="Cancel" (click)="cancel()" type="button" id="back" class="button button-secondary" readonly>Cancel</button>
+            </div>
+          </div>
+        </form>
+        <br>
+      </div>
+    </div>
+  </div>

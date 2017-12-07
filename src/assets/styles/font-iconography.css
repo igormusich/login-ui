@@ -1,0 +1,953 @@
+@font-face {
+  font-family: 'rbc-font-icons';
+  src:  url('../fonts/iconography/rbc-icons.eot');
+  src:  url('../fonts/iconography/rbc-icons.eot?#iefix') format('embedded-opentype'), 
+        url('../fonts/iconography/rbc-icons.woff') format('woff'),
+        url('../fonts/iconography/rbc-icons.ttf') format('truetype'),
+        url('../fonts/iconography/rbc-icons.svg#rbc-icons') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+[class*='rbc-font-icon-']:before {
+  display: inline-block;
+  font-family: 'rbc-font-icons';
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+[class^='rbc-font-icon'][class$='-sm']:before {
+  font-size: 16px;
+  width: 16px;
+  height: 16px;
+}
+[class^='rbc-font-icon'][class$='-md']:before {
+  font-size: 32px;
+  width: 32px;
+  height: 32px;
+}
+[class^='rbc-font-icon'][class$='-lg']:before {
+  font-size: 256px;
+  width: 256px;
+  height: 256px;
+}
+
+[class*="rbc-font-icon-"] {
+  color: #585858;
+}
+[class*="rbc-font-icon-"]:hover {
+  color: #006ac3;
+}
+.rbc-font-icon-confirmation-lg:before {
+  content: "\EA01";
+}
+.rbc-font-icon-confirmation-with-circle-lg:before {
+  content: "\EA02";
+}
+.rbc-font-icon-warning-triangle-lg:before {
+  content: "\EA03";
+}
+.rbc-font-icon-inbox-message-lg:before {
+  content: "\EA04";
+}
+.rbc-font-icon-secure-lg:before {
+  content: "\EA05";
+}
+.rbc-font-icon-application-loading-lg:before {
+  content: "\EA06";
+}
+.rbc-font-icon-submitting-lg:before {
+  content: "\EA07";
+}
+.rbc-font-icon-email-and-dynamic-counter-lg:before {
+  content: "\EA08";
+}
+.rbc-font-icon-error-square-lg:before {
+  content: "\EA09";
+}
+.rbc-font-icon-alerts-lg:before {
+  content: "\EA0A";
+}
+.rbc-font-icon-error-circle-lg:before {
+  content: "\EA0B";
+}
+.rbc-font-icon-confirmation-md:before {
+  content: "\EA0C";
+}
+.rbc-font-icon-confirmation-with-circle-md:before {
+  content: "\EA0D";
+}
+.rbc-font-icon-warning-triangle-md:before {
+  content: "\EA0E";
+}
+.rbc-font-icon-inbox-message-md:before {
+  content: "\EA0F";
+}
+.rbc-font-icon-secure-md:before {
+  content: "\EA10";
+}
+.rbc-font-icon-application-loading-md:before {
+  content: "\EA11";
+}
+.rbc-font-icon-submitting-md:before {
+  content: "\EA12";
+}
+.rbc-font-icon-email-and-dynamic-counter-md:before {
+  content: "\EA13";
+}
+.rbc-font-icon-error-square-md:before {
+  content: "\EA14";
+}
+.rbc-font-icon-alerts-md:before {
+  content: "\EA15";
+}
+.rbc-font-icon-error-circle-md:before {
+  content: "\EA16";
+}
+.rbc-font-icon-confirmation-sm:before {
+  content: "\EA17";
+}
+.rbc-font-icon-confirmation-with-circle-sm:before {
+  content: "\EA18";
+}
+.rbc-font-icon-warning-black-sm:before {
+  content: "\EA19";
+}
+.rbc-font-icon-warning-triangle-sm:before {
+  content: "\EA1A";
+}
+.rbc-font-icon-inbox-message-sm:before {
+  content: "\EA1B";
+}
+.rbc-font-icon-secure-sm:before {
+  content: "\EA1C";
+}
+.rbc-font-icon-application-loading-sm:before {
+  content: "\EA1D";
+}
+.rbc-font-icon-submitting-sm:before {
+  content: "\EA1E";
+}
+.rbc-font-icon-email-and-dynamic-counter-sm:before {
+  content: "\EA1F";
+}
+.rbc-font-icon-error-square-sm:before {
+  content: "\EA20";
+}
+.rbc-font-icon-error-square-black-sm:before {
+  content: "\EA21";
+}
+.rbc-font-icon-alerts-sm:before {
+  content: "\EA22";
+}
+.rbc-font-icon-error-circle-sm:before {
+  content: "\EA23";
+}
+.rbc-font-icon-calendar-lg:before {
+  content: "\EA24";
+}
+.rbc-font-icon-calendar-dynamic-lg:before {
+  content: "\EA25";
+}
+.rbc-font-icon-compare-lg:before {
+  content: "\EA26";
+}
+.rbc-font-icon-currency-exchange-lg:before {
+  content: "\EA27";
+}
+.rbc-font-icon-transfer-funds-lg:before {
+  content: "\EA28";
+}
+.rbc-font-icon-insights-lg:before {
+  content: "\EA29";
+}
+.rbc-font-icon-tools-lg:before {
+  content: "\EA2A";
+}
+.rbc-font-icon-calculator-lg:before {
+  content: "\EA2B";
+}
+.rbc-font-icon-email-transfer-lg:before {
+  content: "\EA2C";
+}
+.rbc-font-icon-calendar-md:before {
+  content: "\EA2D";
+}
+.rbc-font-icon-calendar-dynamic-md:before {
+  content: "\EA2E";
+}
+.rbc-font-icon-compare-md:before {
+  content: "\EA2F";
+}
+.rbc-font-icon-currency-exchange-md:before {
+  content: "\EA30";
+}
+.rbc-font-icon-transfer-funds-md:before {
+  content: "\EA31";
+}
+.rbc-font-icon-insights-md:before {
+  content: "\EA32";
+}
+.rbc-font-icon-tools-md:before {
+  content: "\EA33";
+}
+.rbc-font-icon-calculator-md:before {
+  content: "\EA34";
+}
+.rbc-font-icon-email-transfer-md:before {
+  content: "\EA35";
+}
+.rbc-font-icon-calendar-sm:before {
+  content: "\EA36";
+}
+.rbc-font-icon-calendar-dynamic-sm:before {
+  content: "\EA37";
+}
+.rbc-font-icon-compare-sm:before {
+  content: "\EA38";
+}
+.rbc-font-icon-currency-exchange-sm:before {
+  content: "\EA39";
+}
+.rbc-font-icon-transfer-funds-sm:before {
+  content: "\EA3A";
+}
+.rbc-font-icon-insights-sm:before {
+  content: "\EA3B";
+}
+.rbc-font-icon-tools-sm:before {
+  content: "\EA3C";
+}
+.rbc-font-icon-calculator-sm:before {
+  content: "\EA3D";
+}
+.rbc-font-icon-email-transfer-sm:before {
+  content: "\EA3E";
+}
+.rbc-font-icon-contact-lg:before {
+  content: "\EA3F";
+}
+.rbc-font-icon-phone-lg:before {
+  content: "\EA40";
+}
+.rbc-font-icon-locate-lg:before {
+  content: "\EA41";
+}
+.rbc-font-icon-atm-lg:before {
+  content: "\EA42";
+}
+.rbc-font-icon-branch-lg:before {
+  content: "\EA43";
+}
+.rbc-font-icon-email-lg:before {
+  content: "\EA44";
+}
+.rbc-font-icon-contact-md:before {
+  content: "\EA45";
+}
+.rbc-font-icon-phone-md:before {
+  content: "\EA46";
+}
+.rbc-font-icon-locate-md:before {
+  content: "\EA47";
+}
+.rbc-font-icon-atm-md:before {
+  content: "\EA48";
+}
+.rbc-font-icon-branch-md:before {
+  content: "\EA49";
+}
+.rbc-font-icon-email-md:before {
+  content: "\EA4A";
+}
+.rbc-font-icon-contact-sm:before {
+  content: "\EA4B";
+}
+.rbc-font-icon-phone-sm:before {
+  content: "\EA4C";
+}
+.rbc-font-icon-locate-sm:before {
+  content: "\EA4D";
+}
+.rbc-font-icon-atm-sm:before {
+  content: "\EA4E";
+}
+.rbc-font-icon-branch-sm:before {
+  content: "\EA4F";
+}
+.rbc-font-icon-email-sm:before {
+  content: "\EA50";
+}
+.rbc-font-icon-instagram-lg:before {
+  content: "\EA51";
+}
+.rbc-font-icon-facebook-lg:before {
+  content: "\EA52";
+}
+.rbc-font-icon-twitter-lg:before {
+  content: "\EA53";
+}
+.rbc-font-icon-youtube-lg:before {
+  content: "\EA54";
+}
+.rbc-font-icon-online-chat-lg:before {
+  content: "\EA55";
+}
+.rbc-font-icon-book-an-appoiment-lg:before {
+  content: "\EA56";
+}
+.rbc-font-icon-help-lg:before {
+  content: "\EA57";
+}
+.rbc-font-icon-linkedin-lg:before {
+  content: "\EA58";
+}
+.rbc-font-icon-faqs-lg:before {
+  content: "\EA59";
+}
+.rbc-font-icon-customer-support-lg:before {
+  content: "\EA5A";
+}
+.rbc-font-icon-info-lg:before {
+  content: "\EA5B";
+}
+.rbc-font-icon-instagram-md:before {
+  content: "\EA5C";
+}
+.rbc-font-icon-facebook-md:before {
+  content: "\EA5D";
+}
+.rbc-font-icon-twitter-md:before {
+  content: "\EA5E";
+}
+.rbc-font-icon-youtube-md:before {
+  content: "\EA5F";
+}
+.rbc-font-icon-online-chat-md:before {
+  content: "\EA60";
+}
+.rbc-font-icon-book-an-appoiment-md:before {
+  content: "\EA61";
+}
+.rbc-font-icon-help-md:before {
+  content: "\EA62";
+}
+.rbc-font-icon-linkedin-md:before {
+  content: "\EA63";
+}
+.rbc-font-icon-faqs-md:before {
+  content: "\EA64";
+}
+.rbc-font-icon-customer-support-md:before {
+  content: "\EA65";
+}
+.rbc-font-icon-info-md:before {
+  content: "\EA66";
+}
+.rbc-font-icon-instagram-sm:before {
+  content: "\EA67";
+}
+.rbc-font-icon-facebook-sm:before {
+  content: "\EA68";
+}
+.rbc-font-icon-twitter-sm:before {
+  content: "\EA69";
+}
+.rbc-font-icon-youtube-sm:before {
+  content: "\EA6A";
+}
+.rbc-font-icon-online-chat-sm:before {
+  content: "\EA6B";
+}
+.rbc-font-icon-book-an-appoiment-sm:before {
+  content: "\EA6C";
+}
+.rbc-font-icon-help-sm:before {
+  content: "\EA6D";
+}
+.rbc-font-icon-faqs-sm:before {
+  content: "\EA6E";
+}
+.rbc-font-icon-customer-support-sm:before {
+  content: "\EA6F";
+}
+.rbc-font-icon-info-sm:before {
+  content: "\EA70";
+}
+.rbc-font-icon-word-lg:before {
+  content: "\EA71";
+}
+.rbc-font-icon-excel-lg:before {
+  content: "\EA72";
+}
+.rbc-font-icon-pdf-lg:before {
+  content: "\EA73";
+}
+.rbc-font-icon-powerpoint-lg:before {
+  content: "\EA74";
+}
+.rbc-font-icon-document-lg:before {
+  content: "\EA75";
+}
+.rbc-font-icon-documents-lg:before {
+  content: "\EA76";
+}
+.rbc-font-icon-zip-file-lg:before {
+  content: "\EA77";
+}
+.rbc-font-icon-word-md:before {
+  content: "\EA78";
+}
+.rbc-font-icon-excel-md:before {
+  content: "\EA79";
+}
+.rbc-font-icon-pdf-md:before {
+  content: "\EA7A";
+}
+.rbc-font-icon-powerpoint-md:before {
+  content: "\EA7B";
+}
+.rbc-font-icon-document-md:before {
+  content: "\EA7C";
+}
+.rbc-font-icon-documents-md:before {
+  content: "\EA7D";
+}
+.rbc-font-icon-zip-file-md:before {
+  content: "\EA7E";
+}
+.rbc-font-icon-word-sm:before {
+  content: "\EA7F";
+}
+.rbc-font-icon-excel-sm:before {
+  content: "\EA80";
+}
+.rbc-font-icon-pdf-sm:before {
+  content: "\EA81";
+}
+.rbc-font-icon-powerpoint-sm:before {
+  content: "\EA82";
+}
+.rbc-font-icon-document-sm:before {
+  content: "\EA83";
+}
+.rbc-font-icon-documents-sm:before {
+  content: "\EA84";
+}
+.rbc-font-icon-zip-file-sm:before {
+  content: "\EA85";
+}
+.rbc-font-icon-left-arrow-lg:before {
+  content: "\EA86";
+}
+.rbc-font-icon-right-arrow-lg:before {
+  content: "\EA87";
+}
+.rbc-font-icon-left-arrow-with-circle-lg:before {
+  content: "\EA88";
+}
+.rbc-font-icon-right-arrow-with-circle-lg:before {
+  content: "\EA89";
+}
+.rbc-font-icon-menu-lg:before {
+  content: "\EA8A";
+}
+.rbc-font-icon-up-arrow-lg:before {
+  content: "\EA8B";
+}
+.rbc-font-icon-up-arrow-with-circle-lg:before {
+  content: "\EA8C";
+}
+.rbc-font-icon-down-arrow-lg:before {
+  content: "\EA8D";
+}
+.rbc-font-icon-down-arrow-with-circle-lg:before {
+  content: "\EA8E";
+}
+.rbc-font-icon-back-to-top-lg:before {
+  content: "\EA8F";
+}
+.rbc-font-icon-back-to-top-with-circle-lg:before {
+  content: "\EA90";
+}
+.rbc-font-icon-search-lg:before {
+  content: "\EA91";
+}
+.rbc-font-icon-shopping-cart-lg:before {
+  content: "\EA92";
+}
+.rbc-font-icon-home-lg:before {
+  content: "\EA93";
+}
+.rbc-font-icon-sign-in-lg:before {
+  content: "\EA94";
+}
+.rbc-font-icon-link-indicator-lg:before {
+  content: "\EA95";
+}
+.rbc-font-icon-popup-window-lg:before {
+  content: "\EA96";
+}
+.rbc-font-icon-external-site-link-lg:before {
+  content: "\EA97";
+}
+.rbc-font-icon-left-arrow-md:before {
+  content: "\EA98";
+}
+.rbc-font-icon-right-arrow-md:before {
+  content: "\EA99";
+}
+.rbc-font-icon-left-arrow-with-circle-md:before {
+  content: "\EA9A";
+}
+.rbc-font-icon-right-arrow-with-circle-md:before {
+  content: "\EA9B";
+}
+.rbc-font-icon-menu-md:before {
+  content: "\EA9C";
+}
+.rbc-font-icon-up-arrow-md:before {
+  content: "\EA9D";
+}
+.rbc-font-icon-up-arrow-with-circle-md:before {
+  content: "\EA9E";
+}
+.rbc-font-icon-down-arrow-md:before {
+  content: "\EA9F";
+}
+.rbc-font-icon-down-arrow-with-circle-md:before {
+  content: "\EAA0";
+}
+.rbc-font-icon-back-to-top-md:before {
+  content: "\EAA1";
+}
+.rbc-font-icon-back-to-top-with-circle-md:before {
+  content: "\EAA2";
+}
+.rbc-font-icon-search-md:before {
+  content: "\EAA3";
+}
+.rbc-font-icon-shopping-cart-md:before {
+  content: "\EAA4";
+}
+.rbc-font-icon-home-md:before {
+  content: "\EAA5";
+}
+.rbc-font-icon-sign-in-md:before {
+  content: "\EAA6";
+}
+.rbc-font-icon-link-indicator-md:before {
+  content: "\EAA7";
+}
+.rbc-font-icon-popup-window-md:before {
+  content: "\EAA8";
+}
+.rbc-font-icon-external-site-link-md:before {
+  content: "\EAA9";
+}
+.rbc-font-icon-left-arrow-sm:before {
+  content: "\EAAA";
+}
+.rbc-font-icon-right-arrow-sm:before {
+  content: "\EAAB";
+}
+.rbc-font-icon-left-arrow-with-circle-sm:before {
+  content: "\EAAC";
+}
+.rbc-font-icon-right-arrow-with-circle-sm:before {
+  content: "\EAAD";
+}
+.rbc-font-icon-menu-sm:before {
+  content: "\EAAE";
+}
+.rbc-font-icon-up-arrow-sm:before {
+  content: "\EAAF";
+}
+.rbc-font-icon-up-arrow-with-circle-sm:before {
+  content: "\EAB0";
+}
+.rbc-font-icon-down-arrow-sm:before {
+  content: "\EAB1";
+}
+.rbc-font-icon-down-arrow-with-circle-sm:before {
+  content: "\EAB2";
+}
+.rbc-font-icon-back-to-top-sm:before {
+  content: "\EAB3";
+}
+.rbc-font-icon-back-to-top-with-circle-sm:before {
+  content: "\EAB4";
+}
+.rbc-font-icon-search-sm:before {
+  content: "\EAB5";
+}
+.rbc-font-icon-shopping-cart-sm:before {
+  content: "\EAB6";
+}
+.rbc-font-icon-home-sm:before {
+  content: "\EAB7";
+}
+.rbc-font-icon-sign-in-sm:before {
+  content: "\EAB8";
+}
+.rbc-font-icon-link-indicator-sm:before {
+  content: "\EAB9";
+}
+.rbc-font-icon-popup-window-sm:before {
+  content: "\EABA";
+}
+.rbc-font-icon-external-site-link-sm:before {
+  content: "\EABB";
+}
+.rbc-font-icon-profile-lg:before {
+  content: "\EABC";
+}
+.rbc-font-icon-settings-lg:before {
+  content: "\EABD";
+}
+.rbc-font-icon-profile-md:before {
+  content: "\EABE";
+}
+.rbc-font-icon-settings-md:before {
+  content: "\EABF";
+}
+.rbc-font-icon-profile-sm:before {
+  content: "\EAC0";
+}
+.rbc-font-icon-settings-sm:before {
+  content: "\EAC1";
+}
+.rbc-font-icon-cash-lg:before {
+  content: "\EAC2";
+}
+.rbc-font-icon-cheque-lg:before {
+  content: "\EAC3";
+}
+.rbc-font-icon-receipt-132:before {
+  content: "\EAC4";
+}
+.rbc-font-icon-chequing-account-lg:before {
+  content: "\EAC5";
+}
+.rbc-font-icon-savings-account-lg:before {
+  content: "\EAC6";
+}
+.rbc-font-icon-credit-card-lg:before {
+  content: "\EAC7";
+}
+.rbc-font-icon-credit-cards-lg:before {
+  content: "\EAC8";
+}
+.rbc-font-icon-investments-lg:before {
+  content: "\EAC9";
+}
+.rbc-font-icon-wallet-lg:before {
+  content: "\EACA";
+}
+.rbc-font-icon-cash-md:before {
+  content: "\EACB";
+}
+.rbc-font-icon-cheque-md:before {
+  content: "\EACC";
+}
+.rbc-font-icon-receipt-md:before {
+  content: "\EACD";
+}
+.rbc-font-icon-chequing-account-md:before {
+  content: "\EACE";
+}
+.rbc-font-icon-savings-account-md:before {
+  content: "\EACF";
+}
+.rbc-font-icon-credit-card-md:before {
+  content: "\EAD0";
+}
+.rbc-font-icon-credit-cards-md:before {
+  content: "\EAD1";
+}
+.rbc-font-icon-investments-md:before {
+  content: "\EAD2";
+}
+.rbc-font-icon-wallet-md:before {
+  content: "\EAD3";
+}
+.rbc-font-icon-cash-sm:before {
+  content: "\EAD4";
+}
+.rbc-font-icon-cheque-sm:before {
+  content: "\EAD5";
+}
+.rbc-font-icon-receipt-sm:before {
+  content: "\EAD6";
+}
+.rbc-font-icon-chequing-account-sm:before {
+  content: "\EAD7";
+}
+.rbc-font-icon-savings-account-sm:before {
+  content: "\EAD8";
+}
+.rbc-font-icon-credit-card-sm:before {
+  content: "\EAD9";
+}
+.rbc-font-icon-credit-cards-sm:before {
+  content: "\EADA";
+}
+.rbc-font-icon-investments-sm:before {
+  content: "\EADB";
+}
+.rbc-font-icon-wallet-sm:before {
+  content: "\EADC";
+}
+.rbc-font-icon-flag-lg:before {
+  content: "\EADD";
+}
+.rbc-font-icon-star-rating-lg:before {
+  content: "\EADE";
+}
+.rbc-font-icon-remove-lg:before {
+  content: "\EADF";
+}
+.rbc-font-icon-remove-with-circle-lg:before {
+  content: "\EAE0";
+}
+.rbc-font-icon-add-to-favourites-lg:before {
+  content: "\EAE1";
+}
+.rbc-font-icon-remove-from-favourites-lg:before {
+  content: "\EAE2";
+}
+.rbc-font-icon-add-lg:before {
+  content: "\EAE3";
+}
+.rbc-font-icon-add-with-circle-lg:before {
+  content: "\EAE4";
+}
+.rbc-font-icon-close-lg:before {
+  content: "\EAE5";
+}
+.rbc-font-icon-close-with-circle-lg:before {
+  content: "\EAE6";
+}
+.rbc-font-icon-print-lg:before {
+  content: "\EAE7";
+}
+.rbc-font-icon-download-lg:before {
+  content: "\EAE8";
+}
+.rbc-font-icon-video-lg:before {
+  content: "\EAE9";
+}
+.rbc-font-icon-export-lg:before {
+  content: "\EAEA";
+}
+.rbc-font-icon-pen-lg:before {
+  content: "\EAEB";
+}
+.rbc-font-icon-enlarge-fonts-lg:before {
+  content: "\EAEC";
+}
+.rbc-font-icon-favourite-lg:before {
+  content: "\EAED";
+}
+.rbc-font-icon-redo-lg:before {
+  content: "\EAEE";
+}
+.rbc-font-icon-uploading-lg:before {
+  content: "\EAEF";
+}
+.rbc-font-icon-zoom-in-lg:before {
+  content: "\EAF0";
+}
+.rbc-font-icon-zoom-out-lg:before {
+  content: "\EAF1";
+}
+.rbc-font-icon-undo-lg:before {
+  content: "\EAF2";
+}
+.rbc-font-icon-logout-lg:before {
+  content: "\EAF3";
+}
+.rbc-font-icon-edit-lg:before {
+  content: "\EAF4";
+}
+.rbc-font-icon-refresh-lg:before {
+  content: "\EAF5";
+}
+.rbc-font-icon-attach-lg:before {
+  content: "\EAF6";
+}
+.rbc-font-icon-bookmark-lg:before {
+  content: "\EAF7";
+}
+.rbc-font-icon-delete-lg:before {
+  content: "\EAF8";
+}
+.rbc-font-icon-flag-md:before {
+  content: "\EAF9";
+}
+.rbc-font-icon-star-rating-md:before {
+  content: "\EAFA";
+}
+.rbc-font-icon-remove-md:before {
+  content: "\EAFB";
+}
+.rbc-font-icon-remove-with-circle-md:before {
+  content: "\EAFC";
+}
+.rbc-font-icon-add-to-favourites-md:before {
+  content: "\EAFD";
+}
+.rbc-font-icon-remove-from-favourites-md:before {
+  content: "\EAFE";
+}
+.rbc-font-icon-add-md:before {
+  content: "\EAFF";
+}
+.rbc-font-icon-add-with-circle-md:before {
+  content: "\EB00";
+}
+.rbc-font-icon-close-md:before {
+  content: "\EB01";
+}
+.rbc-font-icon-close-with-circle-md:before {
+  content: "\EB02";
+}
+.rbc-font-icon-print-md:before {
+  content: "\EB03";
+}
+.rbc-font-icon-download-md:before {
+  content: "\EB04";
+}
+.rbc-font-icon-video-md:before {
+  content: "\EB05";
+}
+.rbc-font-icon-export-md:before {
+  content: "\EB06";
+}
+.rbc-font-icon-pen-md:before {
+  content: "\EB07";
+}
+.rbc-font-icon-enlarge-fonts-md:before {
+  content: "\EB08";
+}
+.rbc-font-icon-favourite-md:before {
+  content: "\EB09";
+}
+.rbc-font-icon-redo-md:before {
+  content: "\EB0A";
+}
+.rbc-font-icon-uploading-md:before {
+  content: "\EB0B";
+}
+.rbc-font-icon-zoom-in-md:before {
+  content: "\EB0C";
+}
+.rbc-font-icon-zoom-out-md:before {
+  content: "\EB0D";
+}
+.rbc-font-icon-undo-md:before {
+  content: "\EB0E";
+}
+.rbc-font-icon-logout-md:before {
+  content: "\EB0F";
+}
+.rbc-font-icon-edit-md:before {
+  content: "\EB10";
+}
+.rbc-font-icon-refresh-md:before {
+  content: "\EB11";
+}
+.rbc-font-icon-attach-md:before {
+  content: "\EB12";
+}
+.rbc-font-icon-bookmark-md:before {
+  content: "\EB13";
+}
+.rbc-font-icon-delete-md:before {
+  content: "\EB14";
+}
+.rbc-font-icon-flag-sm:before {
+  content: "\EB15";
+}
+.rbc-font-icon-star-rating-sm:before {
+  content: "\EB16";
+}
+.rbc-font-icon-remove-sm:before {
+  content: "\EB17";
+}
+.rbc-font-icon-remove-with-circle-sm:before {
+  content: "\EB18";
+}
+.rbc-font-icon-add-to-favourites-sm:before {
+  content: "\EB19";
+}
+.rbc-font-icon-remove-from-favourites-sm:before {
+  content: "\EB1A";
+}
+.rbc-font-icon-add-sm:before {
+  content: "\EB1B";
+}
+.rbc-font-icon-add-with-circle-sm:before {
+  content: "\EB1C";
+}
+.rbc-font-icon-close-sm:before {
+  content: "\EB1D";
+}
+.rbc-font-icon-close-with-circle-sm:before {
+  content: "\EB1E";
+}
+.rbc-font-icon-print-sm:before {
+  content: "\EB1F";
+}
+.rbc-font-icon-download-sm:before {
+  content: "\EB20";
+}
+.rbc-font-icon-video-sm:before {
+  content: "\EB21";
+}
+.rbc-font-icon-export-sm:before {
+  content: "\EB22";
+}
+.rbc-font-icon-pen-sm:before {
+  content: "\EB23";
+}
+.rbc-font-icon-enlarge-fonts-sm:before {
+  content: "\EB24";
+}
+.rbc-font-icon-favourite-sm:before {
+  content: "\EB25";
+}
+.rbc-font-icon-redo-sm:before {
+  content: "\EB26";
+}
+.rbc-font-icon-uploading-sm:before {
+  content: "\EB27";
+}
+.rbc-font-icon-zoom-in-sm:before {
+  content: "\EB28";
+}
+.rbc-font-icon-zoom-out-sm:before {
+  content: "\EB29";
+}
+.rbc-font-icon-undo-sm:before {
+  content: "\EB2A";
+}
+.rbc-font-icon-logout-sm:before {
+  content: "\EB2B";
+}
+.rbc-font-icon-edit-sm:before {
+  content: "\EB2C";
+}
+.rbc-font-icon-refresh-sm:before {
+  content: "\EB2D";
+}
+.rbc-font-icon-attach-sm:before {
+  content: "\EB2E";
+}
+.rbc-font-icon-bookmark-sm:before {
+  content: "\EB2F";
+}
+.rbc-font-icon-delete-sm:before {
+  content: "\EB30";
+}

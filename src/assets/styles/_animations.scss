@@ -1,0 +1,27 @@
+@mixin transition-150 {
+ -webkit-transition: 150ms ease;
+  -moz-transition: 150ms ease;
+  -o-transition: 150ms ease;
+  transition: 150ms ease;
+}
+
+@mixin transition-200 {
+ -webkit-transition: 200ms ease;
+  -moz-transition: 200ms ease;
+  -o-transition: 200ms ease;
+  transition: 200ms ease;
+}
+
+.transition-150 {
+ -webkit-transition: 150ms ease;
+  -moz-transition: 150ms ease;
+  -o-transition: 150ms ease;
+  transition: 150ms ease;
+}
+
+.transition-200 {
+ -webkit-transition: 200ms ease;
+  -moz-transition: 200ms ease;
+  -o-transition: 200ms ease;
+  transition: 200ms ease;
+}
